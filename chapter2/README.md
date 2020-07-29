@@ -21,6 +21,7 @@
 - [문제영역에서 가져온 이름을 사용하라](#문제영역에서-가져온-이름을-사용하라)
 - [의미 있는 맥락을 추가하라](#의미-있는-맥락을-추가하라)
 - [불필요한 맥락을 없애라](#불필요한-맥락을-없애라)
+- [내가 개선한 한줄 코드 소개](#내가-개선한-한줄-코드-소개)
 - [느낀점](#느낀점)
 
 
@@ -503,7 +504,46 @@
 
 </br>
 
+----------
 
+</br>
+
+- ### 내가 개선한 한줄 코드 소개
+  > 백준 5397번 코드 일부 발췌
+  
+  - 리팩터링 전
+    > 어떠한 역할을 수행하는지 유추는 할 수 있지만, 정확하게 명시가 되어있지 않음. 
+    ``` java
+    for(int i = 0; i < str.length(); i++){
+      if(str[i] == '<'){
+        if(it == a.begin()){
+          continue;
+        }
+        it--;
+      }
+    }
+    ```
+    
+    - 리팩터링 후
+    > 어떠한 역할을 수행하는지 정확하게 명시되어있음. + 변수명의 구체화
+    ``` java
+    list<char>::iterator moveLeft(list<char> passwordList, list<char>::iterator iterator){
+    if(iterator != passwordList.begin()){
+         iterator--;
+    }
+    return iterator;
+    }
+    
+    for(int i = 0; i < password.length(); i++){
+            if(password[i] == '<'){
+                iterator = moveLeft(passwordList, iterator);
+            }
+    }
+    ```
+    
+    
+
+</br>
 
 ----------
 
