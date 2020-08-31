@@ -308,7 +308,7 @@
     ```swift
     func moveToMain(){
             DispatchQueue.main.async {
-                let vc = self.storyboard?.instantiateViewController(identifier: "main") as! 		MainViewController
+                let vc = self.storyboard?.instantiateViewController(identifier: "main") as! MainViewController
                               
                 vc.modalPresentationStyle = .fullScreen
                 vc.idText = self.idText
