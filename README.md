@@ -7,8 +7,8 @@
 - #### [4장 주석](./Chapter4/README.md)
 - #### [5장 형식 맞추기](./chapter5/README.md)
 - #### [6장 객체와 자료구조](./chapter6/README.md)
-- #### 7장 오류처리
-- #### 8장 경계 
+- #### [7장 오류처리](./chapter7/README.md)
+- #### [8장 경계](./chapter8/README.md)
 - #### 9장 단위 테스트
 - #### 10장 클래스
 - #### 11장 시스템
