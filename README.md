@@ -12,7 +12,7 @@
 - #### [9장 단위 테스트](./chapter9/README.md)
 - #### [10장 클래스](./chapter10/README.md)
 - #### [11장 시스템](./chapter11/README.md)
-- #### 12장 창발성
+- #### [12장 창발성](./chapter12/README.md)
 - #### 13장 동시성
 - #### 14장 점진적인 개선
 - #### 15장 JUnit 들여다보기
